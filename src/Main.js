@@ -21,15 +21,6 @@ class Main extends Component {
     this.camera.position.y = 0.7;
     this.camera.position.x = 0.7;
 
-    this.loadModel();
-
-    this.renderer.setSize(width, height);
-    window.addEventListener('resize', this.handleResize);
-    this.mount.appendChild(this.renderer.domElement);
-    this.init();
-  }
-
-  loadModel = () => {
     // Load the model //
     this.loader.load(
       './bread.glb',
@@ -48,7 +39,11 @@ class Main extends Component {
         console.error('An error happened', error);
       }
     );
-  };
+    this.renderer.setSize(width, height);
+    window.addEventListener('resize', this.handleResize);
+    this.mount.appendChild(this.renderer.domElement);
+    this.init();
+  }
 
   componentWillUnmount() {
     window.removeEventListener('resize');
