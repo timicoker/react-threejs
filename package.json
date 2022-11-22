@@ -9,7 +9,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "three": "^0.116.1",
     "three-gltf-loader": "^1.111.0",
     "three-orbitcontrols": "^2.110.3"
